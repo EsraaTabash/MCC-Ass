@@ -18,6 +18,7 @@ class MyAdapter (var activity: Activity, var data :ArrayList<Model>)
     class myViewHolder(itemView: View) :RecyclerView.ViewHolder(itemView) {
         val name=itemView.tv_noteName
         val content=itemView.tv_noteContent
+        //val num=itemView.tv_noteNum
     }
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): myViewHolder {
@@ -28,6 +29,7 @@ class MyAdapter (var activity: Activity, var data :ArrayList<Model>)
     override fun onBindViewHolder(holder: myViewHolder, position: Int) {
         holder.name.text=data[position].name
         holder.content.text=data[position].content
+        //holder.num.text=data[position].num.toString()
     }
     override fun getItemCount(): Int {
         return data.size

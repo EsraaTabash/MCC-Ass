@@ -9,12 +9,15 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.add.*
+import kotlin.math.log
 
 class add : AppCompatActivity() {
     lateinit var FBFS: FirebaseFirestore
     lateinit var addBtn: Button
     lateinit var nameTxt: EditText
     lateinit var contentTxt: EditText
+    lateinit var numTxt: EditText
 
 //    var channel_id: String = "123"
 //    var id: Int = 1
@@ -29,6 +32,8 @@ class add : AppCompatActivity() {
         addBtn = findViewById<Button>(R.id.addBtn)
         nameTxt = findViewById<EditText>(R.id.nameTxt)
         contentTxt = findViewById<EditText>(R.id.contentTxt)
+        numTxt = findViewById<EditText>(R.id.numTxt)
+
         addBtn.setOnClickListener {
             if(nameTxt.text.toString().isEmpty()) {
                 nameTxt.error = "Fill this field"
@@ -36,15 +41,26 @@ class add : AppCompatActivity() {
             }else if(contentTxt.text.toString().isEmpty()){
                 contentTxt.error = "Fill this field"
                 contentTxt.requestFocus()
-            }
-            addNewNote(nameTxt.text.toString(), contentTxt.text.toString())
-        }
+            }else if(numTxt.text.toString().isEmpty()){
+                numTxt.error = "Fill this field"
+                numTxt.requestFocus()
+            }else if(numTxt.text.toString().toInt() !== contentTxt.length()){
+                contentTxt.error = "write in the right range"
+
+            }else {
+            var num=numTxt.text.toString().toInt()
+            var newContent=contentTxt.text.substring(0,num)
+            Log.e("tag",num.toString())
+            Log.e("tag",newContent)
+            addNewNote(nameTxt.text.toString(), newContent ,num)
+        }}
     }
 
-    private fun addNewNote(name: String, content: String) {
+    private fun addNewNote(name: String, content: String, num: Int) {
         var note = hashMapOf(
             "name" to name,
-            "content" to content
+            "content" to content,
+            "num" to num
         )
         FBFS.collection("note")
             .add(note)

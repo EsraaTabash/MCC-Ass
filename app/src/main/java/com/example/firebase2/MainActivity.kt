@@ -33,7 +33,8 @@ class MainActivity : AppCompatActivity() {
                     list.add(
                         Model(
                             document.getString("name"),
-                            document.getString("content")
+                            document.getString("content"),
+                            document.getLong("num")?.toInt()
                         ))
                 val rv = findViewById<RecyclerView>(R.id.recyclerView)
                 val A = MyAdapter(this, list)
