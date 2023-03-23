@@ -1,4 +1,4 @@
-package com.example.firebase2
+package com.example.firebase2.ass1
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,11 +6,10 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import com.example.firebase2.R
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
-import kotlinx.android.synthetic.main.add.*
-import kotlin.math.log
 
 class add : AppCompatActivity() {
     lateinit var FBFS: FirebaseFirestore

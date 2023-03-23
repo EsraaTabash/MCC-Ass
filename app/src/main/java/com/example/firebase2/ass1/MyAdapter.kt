@@ -1,15 +1,11 @@
-package com.example.firebase2
+package com.example.firebase2.ass1
 
 import android.app.Activity
-import android.content.Context
-import android.content.Intent
-import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.example.firebase2.R
 import kotlinx.android.synthetic.main.note_item.view.*
 
 class MyAdapter (var activity: Activity, var data :ArrayList<Model>)

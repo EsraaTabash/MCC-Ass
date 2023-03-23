@@ -3,6 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Esraa/StudioProjects/MCCmoblie_cloud_computing/firebase2Ass/app/src/main/res/drawable/progrss.xml" value="0.26614583333333336" />
+        <entry key="..\:/Users/Esraa/StudioProjects/MCCmoblie_cloud_computing/firebase2Ass/app/src/main/res/layout/activity_categories.xml" value="0.25" />
+        <entry key="..\:/Users/Esraa/StudioProjects/MCCmoblie_cloud_computing/firebase2Ass/app/src/main/res/layout/activity_details.xml" value="0.264" />
+        <entry key="..\:/Users/Esraa/StudioProjects/MCCmoblie_cloud_computing/firebase2Ass/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Esraa/StudioProjects/MCCmoblie_cloud_computing/firebase2Ass/app/src/main/res/layout/activity_main2.xml" value="0.27247451343836887" />
+        <entry key="..\:/Users/Esraa/StudioProjects/MCCmoblie_cloud_computing/firebase2Ass/app/src/main/res/layout/activity_notes.xml" value="0.25" />
+        <entry key="..\:/Users/Esraa/StudioProjects/MCCmoblie_cloud_computing/firebase2Ass/app/src/main/res/layout/add.xml" value="0.25" />
+        <entry key="..\:/Users/Esraa/StudioProjects/MCCmoblie_cloud_computing/firebase2Ass/app/src/main/res/layout/category_item.xml" value="0.12708333333333333" />
+        <entry key="..\:/Users/Esraa/StudioProjects/MCCmoblie_cloud_computing/firebase2Ass/app/src/main/res/layout/note_item.xml" value="0.25" />
+        <entry key="..\:/Users/Esraa/StudioProjects/MCCmoblie_cloud_computing/firebase2Ass/app/src/main/res/layout/notes_item.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/Esraa/StudioProjects/MCCmoblie_cloud_computing/firebase2Ass1/app/src/main/res/layout/activity_details.xml" value="0.25" />
+        <entry key="..\:/Users/Esraa/StudioProjects/MCCmoblie_cloud_computing/firebase2Ass1/app/src/main/res/layout/activity_main2.xml" value="0.25" />
+        <entry key="..\:/Users/Esraa/StudioProjects/MCCmoblie_cloud_computing/firebase2Ass1/app/src/main/res/layout/category_item.xml" value="0.25" />
+        <entry key="..\:/Users/Esraa/StudioProjects/MCCmoblie_cloud_computing/firebase2Ass1/app/src/main/res/layout/note_item.xml" value="0.25" />
         <entry key="..\:/Users/Esraa/StudioProjects/firebase2/app/src/main/res/layout/activity_signup.xml" value="0.264" />
         <entry key="..\:/Users/Esraa/StudioProjects/old/firebase2/app/src/main/res/drawable/corners.xml" value="0.26614583333333336" />
         <entry key="..\:/Users/Esraa/StudioProjects/old/firebase2/app/src/main/res/layout/activity_main.xml" value="0.24615384615384617" />
@@ -17,5 +31,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="SuppressABINotification">
+    <option name="modulesWithSuppressedNotConfigured">
+      <set>
+        <option value="firebase2.app" />
+      </set>
+    </option>
   </component>
 </project>

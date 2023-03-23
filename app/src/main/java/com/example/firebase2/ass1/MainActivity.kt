@@ -1,12 +1,12 @@
-package com.example.firebase2
+package com.example.firebase2.ass1
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.firebase2.R
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -35,7 +35,8 @@ class MainActivity : AppCompatActivity() {
                             document.getString("name"),
                             document.getString("content"),
                             document.getLong("num")?.toInt()
-                        ))
+                        )
+                    )
                 val rv = findViewById<RecyclerView>(R.id.recyclerView)
                 val A = MyAdapter(this, list)
                 rv.adapter = A
